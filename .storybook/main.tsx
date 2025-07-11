@@ -5,6 +5,7 @@ const config: StorybookConfig = {
   stories: [
     "../src/stories/**/*.mdx",
     "../src/stories/**/*.stories.@(js|jsx|mjs|ts|tsx)",
+    "!../src/figma_backup/**/*.stories.@(js|jsx|mjs|ts|tsx)",
   ],
 
   addons: [

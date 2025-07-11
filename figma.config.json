@@ -1,6 +1,6 @@
 {
   "codeConnect": {
-    "include": ["src/ui/**/*", "src/figma/**/*"],
+    "include": ["src/ui/**/*", "src/figma/**/*", "src/fcds-src/**/*"],
     "exclude": ["src/figma/icons/*"],
     "parser": "react",
     "importPaths": {
@@ -8,7 +8,9 @@
       "ui/icons/*": "icons",
       "ui/images/*": "images",
       "ui/layout/**/*": "layout",
-      "ui/primitives/**/*": "primitives"
+      "ui/primitives/**/*": "primitives",
+      "fcds-src/foundations/*": "foundations",
+      "fcds-src/components/*": "components"
     },
     "paths": {
       "compositions": ["src/ui/compositions"],
@@ -18,30 +20,31 @@
       "layout": ["src/ui/layout"],
       "primitives": ["src/ui/primitives"],
       "providers": ["src/ui/providers"],
-      "utils": ["src/ui/utils"]
+      "utils": ["src/ui/utils"],
+      "foundations": ["src/fcds-src/foundations"],
+      "components": ["src/fcds-src/components"]
     },
     "documentUrlSubstitutions": {
-      "<FIGMA_ICONS_BASE>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y",
-      "<FIGMA_FOUNDATIONS_COLORS>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=3:2",
-      "<FIGMA_FOUNDATIONS_TYPOGRAPHY>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=3:916",
-      "<FIGMA_FOUNDATIONS_ICONS>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=24885:10",
-      "<FIGMA_FOUNDATIONS_RADIUS>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=24868:1010",
-      "<FIGMA_FOUNDATIONS_SPACING>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=24877:579",
-      "<FIGMA_BADGE_BADGE>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=93:6604",
-      "<FIGMA_BUTTON_BUTTON>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=3:1426",
-      "<FIGMA_CHECKBOX_CHECKBOX>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=24940:6216",
-      "<FIGMA_RADIO_RADIO>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=24940:6217",
-      "<FIGMA_TOGGLE_TOGGLE>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=24944:28856",
-      "<FIGMA_TAB_TAB>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=24940:6218",
-      "<FIGMA_TAGS_TAGS>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=24940:6219",
-      "<FIGMA_FORM_FIELD_FORM_FIELD>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=24883:3496",
-      "<FIGMA_LABEL_LABEL>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=24955:11569",
-      "<FIGMA_DROPDOWN_DROPDOWN>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=24942:2335",
-      "<FIGMA_MULTISELECT_MULTISELECT>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=24942:22710",
-      "<FIGMA_SEGMENTED_TAB_SEGMENTED_TAB>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=24964:20665",
-      "<FIGMA_BASE_BASE>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=24955:9384",
-      "<FIGMA_SHADOW_SHADOW>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=24877:729",
-      "<FIGMA_BORDER_WIDTH_BORDER_WIDTH>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=24900:748"
+      "<FCDS_FOUNDATIONS_COLORS>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=3:2",
+      "<FCDS_FOUNDATIONS_TYPOGRAPHY>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=3:916",
+      "<FCDS_FOUNDATIONS_ICONS>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=24885:10",
+      "<FCDS_FOUNDATIONS_RADIUS>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=24868:1010",
+      "<FCDS_FOUNDATIONS_SPACING>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=24877:579",
+      "<FCDS_FOUNDATIONS_SHADOW>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=24877:729",
+      "<FCDS_FOUNDATIONS_BORDER_WIDTH>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=24900:748",
+      "<FCDS_BADGE>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=93:6604",
+      "<FCDS_BUTTON>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=3:1426",
+      "<FCDS_CHECKBOX>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=24940:6216",
+      "<FCDS_RADIO>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=24940:6217",
+      "<FCDS_TOGGLE>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=24944:28856",
+      "<FCDS_TAB>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=24940:6218",
+      "<FCDS_TAGS>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=24940:6219",
+      "<FCDS_FORM_FIELD>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=24883:3496",
+      "<FCDS_LABEL>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=24955:11569",
+      "<FCDS_DROPDOWN>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=24942:2335",
+      "<FCDS_MULTISELECT>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=24942:22710",
+      "<FCDS_SEGMENTED_TAB>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=24964:20665",
+      "<FCDS_BASE>": "https://figma.com/design/tiGtyc8Fom1Iw7HrTGFm7y?node-id=24955:9384"
     }
   }
 } 
